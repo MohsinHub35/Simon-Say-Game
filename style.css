@@ -1,0 +1,85 @@
+
+body{
+    text-align: center;
+
+    
+}
+.h1{
+    color:green;
+    font-size: 40px;
+    font-weight: 500px;
+    font-style:bold;
+    font-family:'Times New Roman', Times, serif;
+}
+ 
+  
+
+.wrapper{
+    /* height:50vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: bisque; */
+    
+}
+.btn-container{
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    border: 10px solid black;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    background-color:cyan;
+    margin: 2.5rem;
+    
+    
+}
+
+.line-1, .line-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+}
+
+.line-1 {
+    top: 10%;
+}
+
+.line-2 {
+    top: 50%;
+}
+
+.btn{
+    height: 150px;
+    width: 150px;
+    border-radius: 10%;
+    border: 10px solid black;
+    margin: 10px;
+    /* background-color: black; */
+    color: white;
+    
+}
+.grey{
+    background-color: grey;
+}
+.blue{
+    background-color: blue;
+}
+.yellow{
+    background-color: yellow;
+}
+.red{
+    background-color:red;
+}
+.flash{
+    background-color: white;
+}
+.userflash{
+    background-color: orange;
+}
+
+
