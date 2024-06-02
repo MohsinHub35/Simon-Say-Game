@@ -5,18 +5,27 @@ let start=false;
 let level=0;
 
 let btns=["yellow","red","blue","grey"];
-let h2=document.querySelector('h2');
-document.addEventListener("keypress",function(){
-    if(start==false){
+let h2 = document.querySelector('h2');
+let startButton = document.querySelector('button'); // Add this line to select the start button
 
-        console.log("game started");
-        start=true;
-        levelUp();
-
+document.addEventListener("keypress", function () {
+    if (start == false) {
+        startGame();
     }
-
-   
 });
+
+// Add an event listener to the start button
+startButton.addEventListener("click", function () {
+    if (start == false) {
+        startGame();
+    }
+});
+
+function startGame() {
+    console.log("game started");
+    start = true;
+    levelUp();
+}
 function gameflash(btn){
     btn.classList.add("flash");
     setTimeout(function(){
