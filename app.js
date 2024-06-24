@@ -6,7 +6,7 @@ let level=0;
 
 let btns=["yellow","red","blue","grey"];
 let h2 = document.querySelector('h2');
-let startButton = document.querySelector('button'); // Add this line to select the start button
+let startButton = document.querySelector('button');
 
 document.addEventListener("keypress", function () {
     if (start == false) {
@@ -14,7 +14,6 @@ document.addEventListener("keypress", function () {
     }
 });
 
-// Add an event listener to the start button
 startButton.addEventListener("click", function () {
     if (start == false) {
         startGame();
